@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --cell-size: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    height: var(--cell-size);
+    width: var(--cell-size);
+    outline: 1px dotted black;
+}
+
+.cell.wall {
+    background: lightcoral;
+}
+
+.cell.floor {
+    background: wheat;
+}
+
+.cell.start {
+    background: aquamarine;
+}
+
+.cell.finish {
+    background: purple;
+}
