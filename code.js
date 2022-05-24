@@ -1,3 +1,9 @@
+// With a project of this complexity or higher, I would already be looking for opportunities to separate some of this code into other files. Maybe we could have a file just for the "legend" and "mazeModel" objects, for example, since they are pure data and both represent the data model. So I might name that file "model.js" and load it first.
+
+// Then, I might look at the maze creation process as another section of code which could be in a file called something like, "create-maze.js".
+
+// I would continue like this until all the major aspects of my project have a well-named "home" and everything works again. But since you all observed me write the following code, I will leave it as it is.
+
 const legend = {
   "▓": "wall",
   "░": "floor",
