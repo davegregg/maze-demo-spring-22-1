@@ -12,6 +12,9 @@ html {
 }
 
 .cell {
+    display: flex;
+    flex-direction: row;
+
     height: var(--cell-size);
     width: var(--cell-size);
     outline: 1px dotted black;
@@ -22,7 +25,7 @@ html {
 }
 
 .cell.floor {
-    background: wheat;
+    background: lightgoldenrodyellow;
 }
 
 .cell.start {
@@ -31,4 +34,8 @@ html {
 
 .cell.finish {
     background: purple;
+}
+
+.player {
+    width: 100%;
 }
